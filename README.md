@@ -1,3 +1,3 @@
-# cLanguageProjects
-I'll be adding all the C/C++ language projects here.
-I've made these two very interesting projects which are a command line calculator and a working elevator which demonstrates how the elevator works and moves. 
+elevatorWorking 
+In this I've designed a program on the working or an elevator . 
+This uses lots of if-else conditions and while loops to make decisions on which way to go , either up or down.  
