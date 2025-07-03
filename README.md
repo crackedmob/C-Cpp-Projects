@@ -1,7 +1,68 @@
-**ELEVATOR**
-In this program , I've made a program to demonstrate the working of an elevator. This uses if-else statements and while loop for decision making , and on the basis of that it decides on where to move. I've written this purely in C language. I've used various standard libraries and lots of if-else statements, inside the while loop. This contains a decision making statement to even exit the elevator program and if that is not executed the elevator stays in working state.
+# Elevator Simulation in C
 
-(https://github.com/user-attachments/assets/8d45c000-a31d-4d69-9107-b7b0e167de8b)
+A simple command-line based elevator simulation written in C. This project simulates an elevator system that moves between floors based on user input. It demonstrates basic control structures, loops, input validation, and real-time delays.
 
-**TAKING THE INPUT**
-For taking the input we are using another while loop to check the initial condition. We have created two variables for floor input, one of them is initialand the other one is floor. Initial is the variable which is 0 initially as it is on ground floor, and it gets updated everytime it reaches target floor. Floor takes the input for the floor user wants to get to, and this program shows it moving by displaying every floor on the way to tgarget floor . I've used sleep(1) to create a delay of 1second between the floors to show the movement.
+---
+
+## Features
+
+* Simulates floor-by-floor elevator movement from a starting position
+* Allows configuration of maximum floor range at runtime
+* Handles upward and downward movement with delays
+* Validates user input for valid floor range and exit condition
+* Provides continuous operation until manually exited
+
+---
+
+## Technologies Used
+
+* C Programming Language
+* Standard C Libraries:
+
+  * stdio.h
+  * stdlib.h
+  * unistd.h (for sleep functionality)
+
+---
+
+## How to Run
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/crackedmob/elevator-simulation-c.git
+cd elevator-simulation-c
+```
+
+### 2. Compile the Program
+
+```bash
+gcc -o elevator elevator.c
+```
+
+### 3. Run the Program
+
+```bash
+./elevator
+```
+
+---
+
+## Sample Output
+
+```plaintext
+Enter the maximum floor number (e.g., 5): 5
+Enter the floor you want to get to (0 to 5, or -1 to exit): 3
+Going up, floor 1
+Going up, floor 2
+Going up, floor 3
+Arrived at your floor
+Doors opening...
+Doors closing...
+
+Enter the floor you want to get to (0 to 5, or -1 to exit): -1
+Exiting elevator
+```
+
+---
+

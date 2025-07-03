@@ -6,10 +6,14 @@ int main(){
 
 int initial = 0; //denoting ground floor as 0 and initially the elevator is at ground floor 
 int floor;// the floor we want to get to
+int max_floor;//maximum floors the elevator travels to
+
+printf("Enter the maximum floor number (e.g., 10): ");
+scanf("%d", &max_floor);
 
 while(1){
 
-    printf("Enter the floor you want to get to (0,1,2,3,4,5): \n");
+    printf("Enter the floor you want to get to (0 to %d, or -1 to exit): \n", max_floor);
     if(scanf("%d",&floor) != 1){// tsking input and validating it 
         while(getchar() != '\n');
         continue;
@@ -19,7 +23,7 @@ while(1){
         printf("Exiting elevator\n");
         break;
     }
-    if (floor < 0 || floor > 5){// validating the input
+    if (floor < 0 || floor > max_floor){// validating the input
         printf("Enter a valid floor number\n");
         continue;
     }
